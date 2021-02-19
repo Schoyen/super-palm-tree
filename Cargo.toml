@@ -1,0 +1,16 @@
+[package]
+name = "super-palm-tree"
+version = "0.0.1"
+edition = "2018"
+
+[lib]
+name = "super_palm_tree_lib"
+crate-type = ["cdylib"]
+
+[dependencies]
+numpy = "*"
+ndarray = "*"
+
+[dependencies.pyo3]
+version = "*"
+features = ["extension-module"]
